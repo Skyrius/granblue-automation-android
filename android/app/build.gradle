@@ -88,8 +88,8 @@ project.ext.react = [
 // Required for react-native-vector-icons to show the correct icon images.
 // Source: https://github.com/oblador/react-native-vector-icons#option-with-gradle-recommended
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
-
-apply from: "../../node_modules/react-native/react.gradle"
+apply plugin: "com.facebook.react"
+//apply from: "../../node_modules/react-native/react.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -305,7 +305,7 @@ dependencies {
     //////// Automation Library ////////
 
     // Note that the dependencies necessary are already available for the whole project via the library's build.gradle using the api configuration.
-    implementation("com.github.steve1316:android-cv-automation-library:1.1.15")
+    implementation("com.github.Skyrius:android-cv-automation-library:1.1.15")
 
     //////// Project specific ////////
 
